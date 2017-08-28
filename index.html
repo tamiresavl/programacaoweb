@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Frutas</title>
+    <meta name="author" content="Tamires Avelino">
+    <meta http-equiv="refresh" content="90">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: antiquewhite;
+        }
+        
+        div {
+            border-style: solid;
+            border-width: 1px;
+            margin: 5px;
+            padding: 10px;
+        }
+
+    </style>
+    <script>
+        var frutas = [];
+        var continuar = "n";
+
+        do {
+            var fruta = prompt("Digite o nome de uma fruta:");
+            frutas.push(fruta);
+
+            continuar = prompt("Deseja continuar? Sim (Sim, s, S) ou Não (Não, n, N):").toLowerCase();
+
+        } while (continuar.includes("s"));
+
+
+        console.log("For convencioal");
+        for (var i = 0; i < frutas.length; i++) {
+            console.log(frutas[i]);
+        }
+
+    </script>
+</head>
+
+<body>
+    <div>
+        <header>
+            <p><b>Header</b></p>
+        </header>
+    </div>
+    <div>
+        <main>
+            <p><b>Main</b></p>
+        </main>
+    </div>
+    <div>
+        <footer>
+            <p><b>Footer</b></p>
+        </footer>
+    </div>
+</body>
+
+</html>
